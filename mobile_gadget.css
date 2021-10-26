@@ -1,0 +1,144 @@
+.mobile-gadget {
+  height: 31rem;
+  width: 16rem;
+  padding-top: 10px;
+  border-radius: 1rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  background: #333;
+}
+
+.mobile-headset {
+  width: 3rem;
+  border: 2px solid rgb(148, 146, 146);
+  border-radius: 20px;
+  margin: auto;
+}
+
+.screen-frame {
+  height: 85%;
+  width: 90%;
+  background-color: skyblue;
+  margin: auto;
+  margin-top: 0.8rem;
+}
+
+.home-button {
+  height: 2.7rem;
+  width: 2.7rem;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 0.3rem;
+  background: #333;
+  box-shadow: 1px 1px rgba(20, 20, 20, 0.438);
+}
+
+/* circles animation */
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.circle-1 {
+  left: 6%;
+  top: 30%;
+  height: 5rem;
+  width: 5rem;
+  background-color: var(--orange-color);
+  animation: slideInFromLeft 2s ease-in;
+}
+.circle-2 {
+  left: 82%;
+  top: 20%;
+  height: 2.7rem;
+  width: 2.7rem;
+  color: var(--primary-color);
+  background-color: #fff;
+  animation: slideInFromRight 2s ease-in;
+}
+
+.circle-3 {
+  left: 84%;
+  top: 30%;
+  height: 5rem;
+  width: 5rem;
+  background-color: var(--clear-sky-color);
+  animation: slideInFromRight 2s ease-in;
+}
+.circle-4 {
+  left: 87%;
+  top: 70%;
+  height: 3rem;
+  width: 3rem;
+  background-color: #fcd352;
+  animation: slideInFromRight 2s ease-in;
+}
+.circle-5 {
+  left: 8%;
+  top: 70%;
+  height: 2.7rem;
+  width: 2.7rem;
+  color: var(--orange-color);
+  background-color: #fff;
+  animation: slideInFromLeft 2s ease-in;
+}
+
+/* Screen Display */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.col-md-6 {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: 90%;
+}
+
+.list-group {
+  /* display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column; */
+  padding-left: 0;
+  margin-bottom: 0;
+  border-radius: 0.25rem;
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 0.2rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  /* background-color: #fff; */
+  /* border: 1px solid rgba(0, 0, 0, 0.125); */
+}
+
+.card-display {
+  height: 100%;
+}
+
+/* .card-display > *,
+.card-display li {
+  animation: fadeIn 6s;
+} */
+
+.api-data {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fcd352;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

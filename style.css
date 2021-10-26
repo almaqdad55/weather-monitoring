@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+:root {
+  --primary-color: #648cff;
+  --secondary-color: #1c3fa8;
+  --dark-color: #002240;
+  --light-color: #f4f4f4;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+  --clear-sky-color: #047aed;
+  --clear-sky-color_1: #2ea5e6;
+  --orange-color: #f56941;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  max-width: 1100px;
+  margin: auto;
+}
+
+body {
+  font-family: "lato", "sans-serif";
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 1rem 0;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+/* img {
+  width: 100%;
+} */
+
+/* Navbar */
+.navbar {
+  background-color: var(--primary-color);
+  color: #fff;
+  height: 4.5rem;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  margin: 0 1rem;
+  padding: 0.5rem;
+  color: #fff;
+}
+
+.navbar .social {
+  margin: 1rem 0;
+}
+
+.navbar .social a {
+  margin: 0;
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.navbar a:active {
+  background-color: #fff;
+}
+
+/* Showcase */
+
+.showcase {
+  position: relative;
+  height: 35rem;
+  color: #fff;
+  border-bottom-left-radius: 50% 20px;
+  border-bottom-right-radius: 50% 20px;
+  background-color: var(--primary-color);
+}
+
+.showcase h1 {
+  /* font-size: 2.2rem; */
+  font-weight: bold;
+}
+
+.showcase p {
+  font-size: 1.2rem;
+}
+
+.showcase-text a {
+  font-weight: bold;
+}
+
+.showcase-display {
+  position: relative;
+}
+
+/* Features */
+.features {
+  text-align: center;
+}
+
+.features h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.features p {
+  color: #333;
+}
+
+.features-display h3 {
+  margin-top: 0.3rem;
+  font-weight: bold;
+  color: var(--dark-color);
+}
+
+.features-display i {
+  margin-top: 0.3rem;
+  color: var(--orange-color);
+}
+
+/* Screenshots */
+.screenshots .grid {
+  gap: 5rem;
+}
+
+.screenshot-1 .mobile-gadget {
+  float: right;
+}
+
+.screenshot-1 {
+  animation: slideInFromLeft 1s ease-in;
+}
+.screenshot-2 {
+  animation: slideInFromRight 1s ease-in;
+}
+
+.switch > *:nth-child(2) {
+  padding-left: 12.9rem;
+}
+
+.switch > *:nth-child(1) {
+  order: 1;
+}
+
+/* Reviews */
+.reviews h2 {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+.reviews .grid {
+  gap: 3rem;
+}
+
+.reviews p {
+  margin-left: 1.2rem;
+}
+
+.reviews .fa-quote-right {
+  float: right;
+}
+
+.reviews i {
+  color: var(--primary-color);
+}
+
+/* Instructions  */
+
+.instructions-display {
+  position: relative;
+
+  height: 25rem;
+  overflow: hidden;
+}
+
+.instructions h2 {
+  color: #fff;
+}
+
+/* Footer */
+.footer-navbar {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--secondary-color);
+  color: #fff;
+  height: 10rem;
+}
+
+.footer-navbar h1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.footer-navbar a:hover {
+  color: gainsboro;
+  border: none;
+}
+
+.gadget {
+  position: absolute;
+}
+
+.gadget-1 {
+  top: 40%;
+  left: 43%;
+  z-index: 1;
+}
+
+.gadget-2 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  z-index: 2;
+}
+
+.gadget-3 {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  z-index: 1;
+}
+
+/* Tablet and below */
+@media (max-width: 52rem) {
+  .navbar {
+    height: 12rem;
+  }
+
+  .showcase {
+    height: 55rem;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+  }
+
+  .features-display {
+    flex-wrap: wrap;
+  }
+
+  .showcase .grid,
+  .reviews .grid,
+  .instructions .grid,
+  .screenshots .grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .showcase-text,
+  .instructions-text {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .showcase-display {
+    margin-top: 0;
+  }
+
+  .instructions-display,
+  .screenshot-text,
+  .circle {
+    display: none;
+  }
+
+  .screenshot-1,
+  .screenshot-2 {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Animations */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
